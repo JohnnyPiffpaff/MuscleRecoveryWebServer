@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+<class name="musclerecoverywebserver.model.Tbluser" dynamic-insert="true" dynamic-update="true" lazy="false" table="tbluser">
+	<id
+		name="id"
+		type="integer"
+		column="ID"
+		length="11"
+	>	
+		<generator class="native"></generator>
+	</id>
+	<property
+        name="emailaddress"
+        type="string"
+        column="EMAILADDRESS"
+        length="150"
+    />
+    <property
+        name="name"
+        type="string"
+        column="NAME"
+        length="100"
+    />
+    <property
+        name="firstname"
+        type="string"
+        column="FIRSTNAME"
+        length="100"
+    />
+    <property
+        name="nickname"
+        type="string"
+        column="NICKNAME"
+        length="20"
+    />
+    <property
+        name="imei"
+        type="string"
+        column="IMEI"
+        length="15"
+    />
+    <property
+        name="password"
+        type="string"
+        column="PASSWORD"
+        length="15"
+    />
+</class>
+</hibernate-mapping>
